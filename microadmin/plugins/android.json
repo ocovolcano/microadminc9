@@ -12,6 +12,9 @@
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.microadmin.microadmin"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.microadmin.microadmin"
         }
     },
     "dependent_plugins": {
