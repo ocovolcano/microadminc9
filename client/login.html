@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Iniciar Sesión</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/Login.js"></script>
+        <script src="js/toast.js"></script>
+    </head>
+    <body>
+    <div data-role="page">
+        <div data-role="header" data-theme="c">
+            <h1>Iniciar Sesi&#243n</h1>
+        </div><!-- /header -->
+        <div role="main" class="ui-content">
+            <h3>Iniciar Sesión</h3>
+            <label for="txt-email">Correo Electrónico</label>
+            <input type="text" name="txt-email" id="txt-email" value="">
+            <label for="txt-password">Contraseña</label>
+            <input type="password" name="txt-password" id="txt-password" value="">
+            <a href="#" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5" type="submit" onclick="IniciarSesion()">Ingresar</a>
+            <p class="mc-top-margin-1-5"><a href="begin-password-reset.html">¿No recuerda su contraseña?</a></p>
+            <p class="mc-top-margin-1-5"><a href="registro.html">No tengo una cuenta</a></p>
+            <div data-role="popup" id="dlg-invalid-credentials" data-dismissible="false" style="max-width:400px;">
+                <div role="main" class="ui-content">
+                    <h3 class="mc-text-danger">Ha ocurrido un problema</h3>
+                    <p>¿Ingresó sus credenciales correctamente?</p>
+                    <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">Cerrar</a></div>
+                </div>
+            </div>
+        </div><!-- /content -->
+    </div><!-- /page -->
+</body>
+    
+</html>

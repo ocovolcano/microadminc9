@@ -1,0 +1,87 @@
+            <!doctype html>
+            <html>
+                <head>
+                    <title>Inventario</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+                    <link rel="stylesheet" href="css/inventario.css" />
+                    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+                    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+                    <script type="text/javascript" src="js/inventario.js"></script>
+                </head>
+                 <body>
+                   
+                    
+                    <div data-role="page" id="index">
+                        
+                        <div data-role="header">
+                        <h1>Inventario</h1>
+                        <div data-role="navbar">
+                            <ul>
+                                <li><a href="inventario.html" data-icon="bullets" class="ui-btn-active">Inventario</a></li>
+                                <li><a href="ventas.html" data-icon="star">Ventas</a></li>
+                            </ul>
+                        </div><!-- /navbar -->
+                    </div><!-- /footer -->
+                         <div role="content">
+                            	<a id="bt_nuevoProducto" class="ui-btn" href="#agregarProducto">Nuevo Producto</a>
+                                <ul data-role="listview" data-inset="true" id="listaInventario" data-filter="true" data-filter-placeholder="Buscar">
+                                    
+                              </ul>   
+                         </div>
+                    </div>
+                
+                     <div data-role="page" id="verProducto">
+                        <div data-role="header">
+                        
+                        <div data-role="navbar">
+                            <ul>
+                                <li><a href="inventario.html" data-icon="bullets" class="ui-btn-active">Inventario</a></li>
+                                <li><a href="ventas.html" data-icon="star">Ventas</a></li>
+                            </ul>
+                        </div><!-- /navbar -->
+                    </div><!-- /footer -->
+            	        <div data-role="content">
+            		        <div data-role="fieldcontain">
+            			        <img id="imagen_producto"></img>
+            			        <h4 id="nombre"></h3>
+            			       
+            			        <h4 id="codigo"></h3>
+            			      
+            			        <h4 id="preciounitario"></h3>
+            			        
+            			        <h4 id="costomanufactura"></h3>
+            			        
+            			        <h4 id="cantidad"></h3>
+            			        <button id="bt_borrarProducto">Eliminar</button>
+            		        </div>
+            	        </div>
+                    </div>
+                    
+                    <div data-role="page" id="agregarProducto">
+                        <div data-role="header">
+                            <h1>Nuevo Producto</h1>
+                            <div data-role="navbar">
+                                <ul>
+                                    <li><a href="inventario.html" data-icon="bullets" class="ui-btn-active">Inventario</a></li>
+                                    <li><a href="ventas.html" data-icon="star">Ventas</a></li>
+                            </ul>
+                        </div><!-- /navbar -->
+                    </div><!-- /footer -->
+            	        <div data-role="content">
+            		        <div data-role="ui-field-contain">
+            			        <img id="imagen_producto"></img>
+            			            <input type="text" name="email" id="tf_codigo" placeholder="Codigo">
+            			            <input type="text" name="email" id="tf_nombre" placeholder="Nombre">
+            			            <input type="number" name="email" id="tf_nombre" placeholder="Precio Unitario">
+            			            <input type="number" name="email" id="tf_nombre" placeholder="Costo Manufactura">
+                                    <input type="number" name="cantidad" id="tf_cantidad" placeholder="Cantidad">
+            			       
+            			        
+            			        <button id="bt_agregarProducto">Guardar</button>
+            		        </div>
+            	        </div>
+                    </div>
+                </body>
+                
+            </html>
