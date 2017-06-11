@@ -1,0 +1,16 @@
+.thumbnail{
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 80px; /* Set a small width */
+    height: 80px;
+}
+
+a { color: inherit; } 
+
+
+.vistaProducto{
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 100px; /* Set a small width */
+    height: 100px;
+}
