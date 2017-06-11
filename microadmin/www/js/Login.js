@@ -12,10 +12,10 @@ function IniciarSesion(){
     function(data, status){
     
         if(data.success == true){
-            window.location.replace("inventario.html")
+            window.location.replace("inventario.html");
             document.cookie = "idUsuario="+data.IDUsuario;
         }else{
-            displayToast("Ha ingresado mal su correo o contraseña")
+            toastr.error("Ha ingresado mal su correo o contraseña");
         }
     }
     , "json"
